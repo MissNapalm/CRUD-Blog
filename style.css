@@ -1,16 +1,83 @@
+/* Common Styles */
 body {
+    background-color: #000000;
+    color: #fff;
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
-    text-align: center;
-    margin: 0;
-    padding: 0;
 }
 
-h1 {
+.container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Dark Mode Styles */
+.content-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+
+#entry-form {
+    background-color: #1a1a1a;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.input-field {
+    background-color: #333;
+    border: 1px solid #555;
+    color: #fff;
+}
+
+.button {
     background-color: #3498db;
     color: #fff;
-    padding: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    display: block;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #2576b5;
+}
+
+.posts-container {
+    background-color: #1a1a1a;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.edit-button, .delete-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+    transition: background-color 0.3s;
+}
+
+.edit-button:hover, .delete-button:hover {
+    background-color: #444444;
+}
+
+/* Dark Mode Specific Styles */
+input[type="file"] {
+    background-color: #333;
+    border: 1px solid #555;
+    color: #fff;
+}
+
     margin: 0;
 }
 
